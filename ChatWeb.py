@@ -4,8 +4,6 @@ app = Flask(__name__)
 
 @app.route("/check")
 
-chat = ""
-
 num = 0
 
 num1 = 1
