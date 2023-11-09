@@ -1,5 +1,11 @@
 from flask import Flask
 
+chat = ""
+
+num = 0
+
+mum1 = 1
+
 app = Flask(__name__)
 
 @app.route("/check")
