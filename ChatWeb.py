@@ -2,9 +2,9 @@ from flask import Flask
 
 app = Flask(__name__)
 
-app.route("/check")
+@app.route("/check")
 
-chat = 0
+chat = ""
 
 num = 0
 
@@ -22,7 +22,7 @@ def check():
   else:
    num1 = 1
    
-app.route("/<message>")
+@app.route("/<message>")
 
 while echo(message):
  global chat
