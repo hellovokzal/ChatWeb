@@ -30,5 +30,6 @@ def echo(message):
   chat = file1.read()
  with open("chat.txt", "w") as file2:
   file2.write(chat)
+ return "Отправлено"
 if __name__ == "__main__":
     app.run(host="0.0.0.0" , port=8080)
