@@ -4,10 +4,6 @@ app = Flask(__name__)
 
 @app.route("/check")
 
-num = 0
-
-num1 = 1
-
 def check():
  while True:
   global chat
