@@ -18,7 +18,7 @@ def check():
    
 @app.route("/<message>")
 
-while echo(message):
+def echo(message):
  global chat
  with open("chat.txt", "r") as file1:
   chat = file1.read()
