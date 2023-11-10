@@ -15,6 +15,7 @@ def check():
   global chat
   global num
   global num1
+  num = 0
   while True:
       if num == 1:
          num = 0
