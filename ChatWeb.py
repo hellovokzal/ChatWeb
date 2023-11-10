@@ -17,7 +17,7 @@ def check():
             num = 0
             with open("chat.txt", "r") as file:
                 chat = file.read()
-            return chat
+            return chat.replace("favicon.ico", "\n")
         else:
             num1 = 1
 
