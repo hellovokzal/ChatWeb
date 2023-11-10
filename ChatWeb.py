@@ -25,10 +25,11 @@ def check():
 def echo(message):
     global chat
     global num
+    chat = ""
     with open("chat.txt", "r") as file1:
         chat = file1.read()
     with open("chat.txt", "w") as file2:
-        file2.write(chat)
+        file2.write(f"{chat}\n{message}")
         num = 1
     return "Отправлено"
 
