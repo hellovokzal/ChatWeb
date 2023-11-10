@@ -17,11 +17,11 @@ def check():
   global num1
   while True:
       if num == 1:
-      num = 0
-      with open("chat.txt", "r") as file:
-         return str(file.read())
+         num = 0
+         with open("chat.txt", "r") as file:
+            return str(file.read())
       else:
-          num1 = 1
+         num1 = 1
    
 @app.route("/<message>")
 
