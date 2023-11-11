@@ -9,8 +9,8 @@ def echo(message):
     global num
     global num1
     if message.startswith("https://"):
-        num = 8
-        num1 = 7
+        num = 9
+        num1 = 8
         while True:
             num = num + 1
             text1 = message[:num]
@@ -19,8 +19,8 @@ def echo(message):
                 break
             num1 = num + 1
     elif message.startswith("http://"):
-        num = 7
-        num1 = 6
+        num = 8
+        num1 = 7
         while True:
             num = num + 1
             text1 = message[:num]
