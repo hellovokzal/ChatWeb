@@ -22,12 +22,12 @@ def echo(message):
         num = 7
         num1 = 0
         while True:
-            num += 1
+            num = num + 1
             text1 = message[:num]
             if message[num1:num] == "/":
                 text1 = text1
                 break
-            num1 += 1
+            num1 = num + 1
     try:
         if message.startswith("https://") or message.startswith("http://"):
             url = get(message)
