@@ -8,7 +8,7 @@ app = Flask(__name__)
 def echo(message):
 	try:
 		url = get(f"https://{message}")
-		return url
+		return str(url.text)
 	except:
 		return "Ссылка не работает или не существует"
 		
