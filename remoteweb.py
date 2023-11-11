@@ -3,7 +3,7 @@ from requests import *
 
 app = Flask(__name__)
 
-@app.route("/<message>")
+@app.route("/<path:message>")
 
 def echo(message):
 	try:
