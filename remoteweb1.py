@@ -1,5 +1,5 @@
 from flask import Flask
-from requests import get
+from requests import *
 
 app = Flask(__name__)
 num = 0
