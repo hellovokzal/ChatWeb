@@ -8,7 +8,7 @@ num = 0
 def echo(message):
     try:
         url = get(message)
-        return str(url.text)
+        return str(f"https://{url.text}")
     except:
         return "Ссылка не работает или не существует"
 
