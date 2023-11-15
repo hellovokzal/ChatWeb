@@ -7,8 +7,8 @@ num = 0
 @app.route("/<path:message>")
 def echo(message):
     try:
-        url = get(f"{message}")
-        return str({url.text})
+        url = get(message)
+        return str(url.text)
     except:
         return "Ссылка не работает или не существует"
 
